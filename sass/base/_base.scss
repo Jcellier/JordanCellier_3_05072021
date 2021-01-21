@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.header-logo {
+    &__intro {
+        padding-top: 1rem;
+        margin-bottom: .5rem;
+    }
+}
