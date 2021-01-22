@@ -1,6 +1,9 @@
+html {
+    font-family: $font-text;
+}
+
 .header-logo {
     &__intro {
-        font-family: $font-title;
-        font-size: 2.5rem;
+        @include myfood;
     }
 }

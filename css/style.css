@@ -1,7 +1,3 @@
-.header-logo__intro {
-  text-align: center;
-}
-
 *,
 *::after,
 *::before {
@@ -11,12 +7,120 @@
           box-sizing: inherit;
 }
 
-.header-logo__intro {
-  padding-top: 1rem;
-  margin-bottom: .5rem;
+main {
+  margin-left: 5%;
+}
+
+footer {
+  margin-left: 5%;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
 }
 
 .header-logo__intro {
   font-family: "Shrikhand", cursive;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  font-weight: 100;
+}
+
+.header-logo__intro {
+  text-align: center;
+  padding-top: 1rem;
+  /*margin-bottom: 1rem;
+        border-bottom: $color-bg 1px solid;*/
+}
+
+.header-localisation {
+  height: 70px;
+  margin-top: .5rem;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 0 6px 5px -6px #949090 inset;
+          box-shadow: 0 6px 5px -6px #949090 inset;
+}
+
+.header-localisation .fas {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 5%;
+}
+
+.header-localisation .fas p {
+  font-weight: 500;
+}
+
+.header-content {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-top: 30px;
+}
+
+.header-content__title {
+  width: 70%;
+  font-size: 1.7rem;
+}
+
+.header-content__desc {
+  width: 90%;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.header-content__btn {
+  height: 60px;
+  width: 60%;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.fonctionnement__title {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.fonctionnement-box {
+  margin-bottom: 30px;
+}
+
+.fonctionnement-box__btn {
+  border: 3px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 60px;
 }

@@ -1,4 +1,7 @@
 @import "./utils/variables";
-@import "./layout/header";
+@import "./utils/mixins";
 @import "./base/base";
 @import "./base/typography";
+@import "./layout/header";
+@import "./pages/accueil"
+

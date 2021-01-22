@@ -1,0 +1,15 @@
+.fonctionnement {
+    &__title {
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    &-box {
+        margin-bottom: 30px;
+        &__btn {
+            border: 3px black solid;
+            display: flex;
+            width: 90%;
+            height: 60px;
+        }
+    }
+}
