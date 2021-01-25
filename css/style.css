@@ -29,6 +29,30 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
+.restaurant-content__heart {
+  height: 0px;
+  width: 30px;
+  display: inline-block;
+  padding-top: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, -webkit-gradient(linear, right top, left bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom left, -webkit-gradient(linear, left top, right bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom right;
+  -webkit-mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, linear-gradient(to bottom left, red 43%, transparent 43%) bottom left, linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
+          mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, -webkit-gradient(linear, right top, left bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom left, -webkit-gradient(linear, left top, right bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom right;
+          mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, linear-gradient(to bottom left, red 43%, transparent 43%) bottom left, linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
+  -webkit-mask-size: 50% 50%;
+          mask-size: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background: red;
+}
+
+.restaurant-content .heart::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 .header-logo__intro {
   text-align: center;
   padding-top: 1rem;
