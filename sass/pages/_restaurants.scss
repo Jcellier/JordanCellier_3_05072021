@@ -1,0 +1,199 @@
+.header-logo {
+    height: 60px;
+    margin-top: 10px;
+    align-items: center;
+    font-family: $font-title;
+    font-size: 1rem;
+    font-weight: 100;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+    & .fas {
+        padding-left: 20px;
+        grid-column: 1;
+    }
+    &__restaurant {
+        grid-column: 2/3;
+
+    }
+}
+
+.header-img{
+    & img {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+    }
+}
+
+main {
+    background-color: $color-bg-secondary;
+}
+
+.main-title {
+    background-color: $color-bg-secondary;
+    position: relative;
+    bottom: 50px;
+    border-radius: 50px 50px 0px 0px;
+    height: 150%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    &__title {
+        font-family: $font-title;
+    }
+    & button {
+        background-color: $color-bg-secondary;
+        border: none;
+        padding-right: 20px;
+    }
+}
+
+.entry{
+    margin-left: 20px;
+    &__title {
+        font-size: 1.3rem;
+        font-family: $font-text;
+        font-weight: 100;
+        text-transform: uppercase;        
+        margin-left: 10px;
+        & span {
+            text-decoration: underline  $color-tertiary 3px;
+            text-underline-position: under left;
+        }
+    }
+    &-menu__box {
+        margin-top: 20px;
+        margin-right: 30px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height: 60px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        & a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-self: center;
+            color: black;
+            text-decoration: none;
+            & h3 {
+                flex-basis: 100%;
+            }
+            & p {
+                font-weight: lighter;
+            }
+            & .price {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+.plats {
+    margin-left: 20px;
+    &__title {
+        font-size: 1.3rem;
+        font-family: $font-text;
+        font-weight: 100;
+        text-transform: uppercase;        
+        margin-left: 10px;
+        margin-top: 20px;
+        & span {
+            text-decoration: underline  $color-tertiary 3px;
+            text-underline-position: under left;
+        }
+    }
+    &-menu__box {
+        margin-top: 20px;
+        margin-right: 30px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height: 60px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        & a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-self: center;
+            color: black;
+            text-decoration: none;
+            & h3 {
+                flex-basis: 100%;
+            }
+            & p {
+                font-weight: lighter;
+            }
+            & .price {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.desserts {
+    margin-left: 20px;
+    &__title {
+        font-size: 1.3rem;
+        font-family: $font-text;
+        font-weight: 100;
+        text-transform: uppercase;        
+        margin-left: 10px;
+        margin-top: 20px;
+        & span {
+            text-decoration: underline  $color-tertiary 3px;
+            text-underline-position: under left;
+        }
+    }
+    &-menu__box {
+        margin-top: 20px;
+        margin-right: 30px;
+        flex-wrap: wrap;
+        background-color: #fff;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        height: 60px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        & a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-self: center;
+            color: black;
+            text-decoration: none;
+            & h3 {
+                flex-basis: 100%;
+            }
+            & p {
+                font-weight: lighter;
+            }
+            & .price {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+.order {
+    @include btn-mix;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
