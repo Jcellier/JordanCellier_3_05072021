@@ -15,7 +15,6 @@
             width: 90%;
             height: 80px;
             background-color: $color-bg-secondary;
-            border: none;
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             &:hover{
@@ -32,6 +31,7 @@
             align-items: center;
             text-align: left;
             font-size: 1.1rem;
+            padding-top: 25px;
             &__number {
                 color: #fff;
                 border: $color-primary 3px solid;

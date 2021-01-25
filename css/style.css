@@ -55,7 +55,7 @@ main {
 }
 
 .header-localisation .fas {
-  width: 45%;
+  width: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,8 +64,9 @@ main {
   margin-right: 5%;
 }
 
-.header-localisation .fas p {
-  font-weight: 500;
+.header-localisation p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 .header-content {
@@ -167,7 +168,6 @@ footer a .fa-hands-helping {
   width: 90%;
   height: 80px;
   background-color: #f6f6f6;
-  border: none;
   border-radius: 20px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -194,6 +194,7 @@ footer a .fa-hands-helping {
           align-items: center;
   text-align: left;
   font-size: 1.1rem;
+  padding-top: 25px;
 }
 
 .fonctionnement-box__content__number {

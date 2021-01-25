@@ -18,13 +18,14 @@
     font-size: 1.2rem;
     box-shadow: 0 6px 5px -6px rgb(148, 144, 144) inset;
     & .fas {
-        width: 45%;
+        width: 5%;
         display: flex;
         justify-content: space-around;
-        margin-right: 5%;
-        & p {
-            font-weight: 500;
-        }
+        margin-right: 5%;  
+    }
+    & p {
+        font-family: $font-text;
+        font-weight: 400;
     }
 }
 
