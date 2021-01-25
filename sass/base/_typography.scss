@@ -7,3 +7,15 @@ html {
         @include myfood;
     }
 }
+
+header {
+    & .header-localisation {
+        & p {
+            font-family: $font-text;
+        }
+    }
+}
+
+main {
+    font-family: $font-text;
+}

@@ -21,12 +21,12 @@
             }
         }
         &__content {
-            display: flex;
-            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 6fr;
             justify-content: space-between;
             align-items: center;
             text-align: left;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             &__number {
                 color: #fff;
                 border: $color-primary 3px solid;
@@ -35,6 +35,8 @@
                 width: 20px;
                 border-radius: 100px;
                 text-align: center;
+                position: relative;
+                right: 10px;
             }
             & .fas {
                 color: grey;
@@ -104,8 +106,8 @@
         }
         & i {
             grid-column: 3;
-            grid-row: 2/3;
-            padding-top: 15px;
+            grid-row: 2/4;
+            padding-top: 30px;
             cursor: pointer;
         }
     }

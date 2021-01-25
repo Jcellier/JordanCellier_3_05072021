@@ -21,6 +21,14 @@ html {
   font-weight: 100;
 }
 
+header .header-localisation p {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
 .header-logo__intro {
   text-align: center;
   padding-top: 1rem;
@@ -29,7 +37,7 @@ html {
 }
 
 .header-localisation {
-  height: 70px;
+  height: 60px;
   margin-top: .5rem;
   background-color: #eaeaea;
   display: -webkit-box;
@@ -41,7 +49,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   -webkit-box-shadow: 0 6px 5px -6px #949090 inset;
           box-shadow: 0 6px 5px -6px #949090 inset;
 }
@@ -169,10 +177,10 @@ footer a .fa-hands-helping {
 }
 
 .fonctionnement-box__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 6fr;
+      grid-template-columns: 1fr 1fr 6fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -180,7 +188,7 @@ footer a .fa-hands-helping {
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .fonctionnement-box__content__number {
@@ -191,6 +199,8 @@ footer a .fa-hands-helping {
   width: 20px;
   border-radius: 100px;
   text-align: center;
+  position: relative;
+  right: 10px;
 }
 
 .fonctionnement-box__content .fas {
@@ -283,8 +293,8 @@ footer a .fa-hands-helping {
   -ms-grid-column: 3;
   grid-column: 3;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  padding-top: 15px;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  padding-top: 30px;
   cursor: pointer;
 }
