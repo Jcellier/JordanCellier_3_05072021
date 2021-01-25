@@ -8,7 +8,7 @@
 }
 
 main .fonctionnement {
-  margin-left: 5%;
+  margin-left: 0px;
 }
 
 html {
@@ -147,15 +147,20 @@ footer a .fa-hands-helping {
 
 .fonctionnement {
   margin-bottom: 60px;
+  background-color: #fff;
+  padding-bottom: 30px;
+  margin-left: 0px;
 }
 
 .fonctionnement__title {
   padding-top: 30px;
   margin-bottom: 20px;
+  margin-left: 5%;
 }
 
 .fonctionnement-box {
   margin-bottom: 30px;
+  margin-left: 5%;
 }
 
 .fonctionnement-box__btn {
@@ -209,7 +214,6 @@ footer a .fa-hands-helping {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
