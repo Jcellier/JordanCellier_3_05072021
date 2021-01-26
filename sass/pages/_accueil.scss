@@ -108,9 +108,7 @@
         & .empty:active + .full {
             visibility: visible;
             opacity: 1;
-            animation: 1s fadeIn;
-            animation-fill-mode: forwards;
-        
+            animation: 1s fadeIn forwards;
         }
         & img {
             object-fit: cover;

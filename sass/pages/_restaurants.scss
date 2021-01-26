@@ -41,21 +41,48 @@ main {
     border-radius: 50px 50px 0px 0px;
     height: 150%;
     padding-top: 40px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 1rem;
+    padding-left: 20px;
+    /*display: flex;
+    justify-content: space-around;*/
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 0.9rem;
     &__title {
         font-family: $font-title;
+        grid-column: 1;
     }
-    & button {
-        background-color: $color-bg-secondary;
-        border: none;
-        padding-right: 20px;
-    }
+    &__heart {
+        grid-column: 2;
+        grid-row: 1;
+        width: 30px;
+        height: 40px;
+        right: 30px;
+        
+        cursor: pointer;
+        }
+        & .full {
+            fill: url(#linear);
+            visibility: collapse;
+            opacity: 0;
+            
+            
+        }
+        & .empty:active {
+            visibility: collapse;
+            
+            
+          }
+        & .empty:active + .full {
+            visibility: visible;
+            opacity: 1;
+            animation: 1s fadeIn forwards;
+        }
 }
 
 .entry{
     margin-left: 20px;
+    animation: menu 1s forwards;
     &__title {
         font-size: 1.3rem;
         font-family: $font-text;
@@ -101,6 +128,7 @@ main {
 
 .plats {
     margin-left: 20px;
+    animation: menu 2s forwards;
     &__title {
         font-size: 1.3rem;
         font-family: $font-text;
@@ -146,6 +174,7 @@ main {
 
 .desserts {
     margin-left: 20px;
+    animation: menu 3s forwards;
     &__title {
         font-size: 1.3rem;
         font-family: $font-text;

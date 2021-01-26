@@ -84,6 +84,36 @@
   }
 }
 
+@-webkit-keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -395,10 +425,8 @@ footer a .fa-hands-helping {
 .restaurant-content .empty:active + .full {
   visibility: visible;
   opacity: 1;
-  -webkit-animation: 1s fadeIn;
-          animation: 1s fadeIn;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: 1s fadeIn forwards;
+          animation: 1s fadeIn forwards;
 }
 
 .restaurant-content img {
@@ -500,26 +528,56 @@ main {
   border-radius: 50px 50px 0px 0px;
   height: 150%;
   padding-top: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: 1rem;
+  padding-left: 20px;
+  /*display: flex;
+    justify-content: space-around;*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 1fr;
+      grid-template-columns: 6fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  font-size: 0.9rem;
 }
 
 .main-title__title {
   font-family: "Shrikhand", cursive;
+  -ms-grid-column: 1;
+  grid-column: 1;
 }
 
-.main-title button {
-  background-color: #f6f6f6;
-  border: none;
-  padding-right: 20px;
+.main-title__heart {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 30px;
+  height: 40px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.main-title .full {
+  fill: url(#linear);
+  visibility: collapse;
+  opacity: 0;
+}
+
+.main-title .empty:active {
+  visibility: collapse;
+}
+
+.main-title .empty:active + .full {
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation: 1s fadeIn forwards;
+          animation: 1s fadeIn forwards;
 }
 
 .entry {
   margin-left: 20px;
+  -webkit-animation: menu 1s forwards;
+          animation: menu 1s forwards;
 }
 
 .entry__title {
@@ -581,6 +639,8 @@ main {
 
 .plats {
   margin-left: 20px;
+  -webkit-animation: menu 2s forwards;
+          animation: menu 2s forwards;
 }
 
 .plats__title {
@@ -643,6 +703,8 @@ main {
 
 .desserts {
   margin-left: 20px;
+  -webkit-animation: menu 3s forwards;
+          animation: menu 3s forwards;
 }
 
 .desserts__title {
