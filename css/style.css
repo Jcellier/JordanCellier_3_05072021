@@ -1,3 +1,23 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -27,30 +47,6 @@ header .header-localisation p {
 
 main {
   font-family: "Roboto", sans-serif;
-}
-
-.restaurant-content__heart {
-  height: 0px;
-  width: 30px;
-  display: inline-block;
-  padding-top: 30px;
-  margin-top: 20px;
-  cursor: pointer;
-  -webkit-mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, -webkit-gradient(linear, right top, left bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom left, -webkit-gradient(linear, left top, right bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom right;
-  -webkit-mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, linear-gradient(to bottom left, red 43%, transparent 43%) bottom left, linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
-          mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, -webkit-gradient(linear, right top, left bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom left, -webkit-gradient(linear, left top, right bottom, color-stop(43%, red), color-stop(43%, transparent)) bottom right;
-          mask: radial-gradient(circle at 60% 65%, red 64%, transparent 65%) top left, radial-gradient(circle at 40% 65%, red 64%, transparent 65%) top right, linear-gradient(to bottom left, red 43%, transparent 43%) bottom left, linear-gradient(to bottom right, red 43%, transparent 43%) bottom right;
-  -webkit-mask-size: 50% 50%;
-          mask-size: 50% 50%;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  background: red;
-}
-
-.restaurant-content .heart::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
 }
 
 .header-logo__intro {
@@ -280,6 +276,37 @@ footer a .fa-hands-helping {
   color: #278870;
   background-color: #99E2D0;
   border-radius: 4px;
+}
+
+.restaurant-content__heart {
+  width: 30px;
+  height: 40px;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.restaurant-content .full {
+  fill: url(#linear);
+  visibility: collapse;
+  opacity: 0;
+}
+
+.restaurant-content .empty:active {
+  visibility: collapse;
+}
+
+.restaurant-content .empty:active + .full {
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation: 1s fadeIn;
+          animation: 1s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .restaurant-content img {

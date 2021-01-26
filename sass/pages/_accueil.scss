@@ -83,6 +83,34 @@
             background-color: $color-tertiary;
             border-radius: 4px;
         }
+        &__heart {
+            width: 30px;
+            height: 40px;
+            grid-column: 3;
+            grid-row: 2/4;
+            margin-top: 30px;
+            cursor: pointer;
+            
+        }
+        & .full {
+            fill: url(#linear);
+            visibility: collapse;
+            opacity: 0;
+            
+            
+        }
+        & .empty:active {
+            visibility: collapse;
+            
+            
+          }
+        & .empty:active + .full {
+            visibility: visible;
+            opacity: 1;
+            animation: 1s fadeIn;
+            animation-fill-mode: forwards;
+        
+        }
         & img {
             object-fit: cover;
             width: 100%;
