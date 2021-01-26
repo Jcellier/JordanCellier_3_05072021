@@ -1,0 +1,26 @@
+#page_loader {
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    background-color: white;
+    z-index: 99;
+    animation: load 3s forwards;
+  }
+
+
+.spin {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+}
+
+
+

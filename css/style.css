@@ -2,6 +2,15 @@
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
   100% {
     visibility: visible;
     opacity: 1;
@@ -12,9 +21,66 @@
   0% {
     opacity: 0;
   }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
+  }
   100% {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -47,6 +113,31 @@ header .header-localisation p {
 
 main {
   font-family: "Roboto", sans-serif;
+}
+
+#page_loader {
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0%;
+  background-color: white;
+  z-index: 99;
+  -webkit-animation: load 3s forwards;
+          animation: load 3s forwards;
+}
+
+.spin {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: absolute;
+  left: 35%;
+  top: 40%;
 }
 
 .header-logo__intro {
@@ -271,7 +362,8 @@ footer a .fa-hands-helping {
   height: 30px;
   margin-top: 20px;
   margin-right: 20px;
-  padding-left: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   position: absolute;
   color: #278870;
   background-color: #99E2D0;
