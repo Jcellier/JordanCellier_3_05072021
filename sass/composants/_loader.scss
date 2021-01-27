@@ -4,7 +4,7 @@
     bottom: 0%;
     left: 0;
     right: 0%;
-    background-color: white;
+    background: linear-gradient(45deg, $color-secondary, $color-primary);
     z-index: 99;
     animation: load 3s forwards;
   }

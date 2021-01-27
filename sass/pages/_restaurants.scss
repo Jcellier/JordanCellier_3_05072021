@@ -153,7 +153,8 @@ main {
                 position: relative;
                 left: 8%;
             }
-            & i {
+            
+            & .btn-rotation {
                 background-color: $color-tertiary;
                 color: #fff;
                 position: relative;
@@ -165,20 +166,26 @@ main {
                 width: 0px;
                 left: 13px;
                 border-radius: 0 20px 20px 0;
-                visibility: collapse;
+                text-decoration: none;
+                border: none;
                 transition-property: width;
-                transition-duration: 0.4s;
+                transition-duration: 0.5s;
                 transition-timing-function: ease-in;
                 transform-origin: 50% 0%;
                 overflow: hidden;
+                visibility: collapse;
                 
-            }
-            
+            }          
         }
-        & a:hover > i {
+        & a:hover button > i {
             display: flex;
             visibility: visible;
-            width: 20%;         
+            animation: check 0.5s forwards;
+        }
+        & a:hover > .btn-rotation {
+            display: flex;
+            visibility: visible;
+            width: 20%;          
         }
         & a:hover > .menu__desc {
             flex-basis: 60%;
@@ -268,7 +275,7 @@ main {
                 position: relative;
                 left: 8%;
             }
-            & i {
+            & .btn-rotation {
                 background-color: $color-tertiary;
                 color: #fff;
                 position: relative;
@@ -280,20 +287,26 @@ main {
                 width: 0px;
                 left: 13px;
                 border-radius: 0 20px 20px 0;
-                visibility: collapse;
+                text-decoration: none;
+                border: none;
                 transition-property: width;
-                transition-duration: 0.4s;
+                transition-duration: 0.5s;
                 transition-timing-function: ease-in;
                 transform-origin: 50% 0%;
                 overflow: hidden;
+                visibility: collapse;
                 
-            }
-            
+            }          
         }
-        & a:hover > i {
+        & a:hover button > i {
             display: flex;
             visibility: visible;
-            width: 20%;
+            animation: check 0.5s forwards;
+        }
+        & a:hover > .btn-rotation {
+            display: flex;
+            visibility: visible;
+            width: 20%;          
         }
         & a:hover > .menu__desc {
             flex-basis: 60%;
@@ -379,7 +392,7 @@ main {
                 position: relative;
                 left: 8%;
             }
-            & i {
+            & .btn-rotation {
                 background-color: $color-tertiary;
                 color: #fff;
                 position: relative;
@@ -391,27 +404,33 @@ main {
                 width: 0px;
                 left: 13px;
                 border-radius: 0 20px 20px 0;
-                visibility: collapse;
+                text-decoration: none;
+                border: none;
                 transition-property: width;
-                transition-duration: 0.4s;
+                transition-duration: 0.5s;
                 transition-timing-function: ease-in;
                 transform-origin: 50% 0%;
                 overflow: hidden;
+                visibility: collapse;
                 
-            }
-            
+            }          
         }
-        & a:hover > i {
+        & a:hover button > i {
             display: flex;
             visibility: visible;
-            width: 20%;
+            animation: check 0.5s forwards;
+        }
+        & a:hover > .btn-rotation {
+            display: flex;
+            visibility: visible;
+            width: 20%;          
         }
         & a:hover > .menu__desc {
             flex-basis: 60%;
             
         }
         & a:hover > .price {
-            flex-basis: 10%;
+            flex-basis: 20%;
         }
         & a:hover > h3 {
             flex-basis: 60%;
