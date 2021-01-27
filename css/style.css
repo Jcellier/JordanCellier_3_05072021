@@ -576,8 +576,7 @@ main {
 
 .entry {
   margin-left: 20px;
-  -webkit-animation: menu 1s forwards;
-          animation: menu 1s forwards;
+  /*animation: menu 1s forwards;*/
 }
 
 .entry__title {
@@ -586,6 +585,8 @@ main {
   font-weight: 100;
   text-transform: uppercase;
   margin-left: 10px;
+  -webkit-animation: menu 0.4s forwards;
+          animation: menu 0.4s forwards;
 }
 
 .entry__title span {
@@ -605,6 +606,26 @@ main {
   height: 60px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.entry-menu__box.one {
+  -webkit-animation: menu 0.4s forwards;
+          animation: menu 0.4s forwards;
+}
+
+.entry-menu__box.two {
+  -webkit-animation: menu 0.8s forwards;
+          animation: menu 0.8s forwards;
+}
+
+.entry-menu__box.three {
+  -webkit-animation: menu 1.2s forwards;
+          animation: menu 1.2s forwards;
+}
+
+.entry-menu__box.four {
+  -webkit-animation: menu 1.6s forwards;
+          animation: menu 1.6s forwards;
 }
 
 .entry-menu__box a {
@@ -709,8 +730,7 @@ main {
 
 .plats {
   margin-left: 20px;
-  -webkit-animation: menu 2s forwards;
-          animation: menu 2s forwards;
+  /*animation: menu 2s forwards;*/
 }
 
 .plats__title {
@@ -720,6 +740,8 @@ main {
   text-transform: uppercase;
   margin-left: 10px;
   margin-top: 20px;
+  -webkit-animation: menu 2s forwards;
+          animation: menu 2s forwards;
 }
 
 .plats__title span {
@@ -741,6 +763,21 @@ main {
   height: 60px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.plats-menu__box.one {
+  -webkit-animation: menu 2s forwards;
+          animation: menu 2s forwards;
+}
+
+.plats-menu__box.two {
+  -webkit-animation: menu 2.4s forwards;
+          animation: menu 2.4s forwards;
+}
+
+.plats-menu__box.three {
+  -webkit-animation: menu 2.8s forwards;
+          animation: menu 2.8s forwards;
 }
 
 .plats-menu__box a {
@@ -825,7 +862,6 @@ main {
   display: flex;
   visibility: visible;
   width: 20%;
-  /*transform: translateX(-30px);*/
 }
 
 .plats-menu__box a:hover > .menu__desc {
@@ -856,6 +892,8 @@ main {
   text-transform: uppercase;
   margin-left: 10px;
   margin-top: 20px;
+  -webkit-animation: menu 3.2s forwards;
+          animation: menu 3.2s forwards;
 }
 
 .desserts__title span {
@@ -877,6 +915,21 @@ main {
   height: 60px;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.desserts-menu__box.one {
+  -webkit-animation: menu 3.2s forwards;
+          animation: menu 3.2s forwards;
+}
+
+.desserts-menu__box.two {
+  -webkit-animation: menu 3.6s forwards;
+          animation: menu 3.6s forwards;
+}
+
+.desserts-menu__box.three {
+  -webkit-animation: menu 4s forwards;
+          animation: menu 4s forwards;
 }
 
 .desserts-menu__box a {
@@ -961,7 +1014,6 @@ main {
   display: flex;
   visibility: visible;
   width: 20%;
-  /*transform: translateX(-30px);*/
 }
 
 .desserts-menu__box a:hover > .menu__desc {
