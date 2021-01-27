@@ -695,8 +695,8 @@ main {
   visibility: collapse;
   -webkit-transition-property: width;
   transition-property: width;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   -webkit-transform-origin: 50% 0%;
@@ -710,7 +710,6 @@ main {
   display: flex;
   visibility: visible;
   width: 20%;
-  /*transform: translateX(-30px);*/
 }
 
 .entry-menu__box a:hover > .menu__desc {
@@ -847,8 +846,8 @@ main {
   visibility: collapse;
   -webkit-transition-property: width;
   transition-property: width;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   -webkit-transform-origin: 50% 0%;
@@ -999,8 +998,8 @@ main {
   visibility: collapse;
   -webkit-transition-property: width;
   transition-property: width;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   -webkit-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
   -webkit-transform-origin: 50% 0%;

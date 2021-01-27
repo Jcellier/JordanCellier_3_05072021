@@ -167,7 +167,7 @@ main {
                 border-radius: 0 20px 20px 0;
                 visibility: collapse;
                 transition-property: width;
-                transition-duration: 1s;
+                transition-duration: 0.4s;
                 transition-timing-function: ease-in;
                 transform-origin: 50% 0%;
                 overflow: hidden;
@@ -178,9 +178,7 @@ main {
         & a:hover > i {
             display: flex;
             visibility: visible;
-            width: 20%;
-            
-            /*transform: translateX(-30px);*/
+            width: 20%;         
         }
         & a:hover > .menu__desc {
             flex-basis: 60%;
@@ -284,7 +282,7 @@ main {
                 border-radius: 0 20px 20px 0;
                 visibility: collapse;
                 transition-property: width;
-                transition-duration: 1s;
+                transition-duration: 0.4s;
                 transition-timing-function: ease-in;
                 transform-origin: 50% 0%;
                 overflow: hidden;
@@ -395,7 +393,7 @@ main {
                 border-radius: 0 20px 20px 0;
                 visibility: collapse;
                 transition-property: width;
-                transition-duration: 1s;
+                transition-duration: 0.4s;
                 transition-timing-function: ease-in;
                 transform-origin: 50% 0%;
                 overflow: hidden;
