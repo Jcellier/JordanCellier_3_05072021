@@ -1,4 +1,7 @@
 #page_loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     bottom: 0%;
@@ -18,8 +21,6 @@
     height: 80px;
     animation: spin 2s linear infinite;
     position: absolute;
-    left: 45%;
-    top: 38%;
 }
 
 
