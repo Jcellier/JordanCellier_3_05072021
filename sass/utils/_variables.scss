@@ -7,3 +7,9 @@ $color-tertiary: #99E2D0;
 $color-bg: rgb(234, 234, 234);
 $color-bg-secondary: rgb(246, 246, 246);
 $bg-footer: rgb(53, 53, 53);
+
+$breakpoints : (
+    sm-mobile: 300px,
+    sm-tablet: 600px,
+    lg-tablet: 1000px
+);

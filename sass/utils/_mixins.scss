@@ -14,3 +14,17 @@
     font-size: 2.3rem;
     font-weight: 100;
 }
+
+
+@mixin small-screen {
+    @media screen and (max-width: map-get($breakpoints, sm-mobile)){
+        @content;
+    }
+  }
+
+  @mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, sm-tablet)) and
+    (max-width: map-get($breakpoints, lg-tablet)){
+        @content;
+    }
+  }
