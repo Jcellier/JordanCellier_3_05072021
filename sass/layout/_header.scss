@@ -22,7 +22,10 @@
         width: 5%;
         display: flex;
         justify-content: space-around;
-        margin-right: 5%; 
+        margin-right: 5%;
+        @include desktop {
+            margin-right: 1%;
+            } 
         
     }
     & p {
@@ -31,6 +34,10 @@
         @include tablet {
             position: relative;
             right: 4%;
+            }
+        @include desktop {
+            position: relative;
+            right: 2%;
             } 
     }
 }
@@ -58,6 +65,9 @@
         @include btn-mix;
         margin-bottom: 50px;
         @include tablet {
+            width: 300px;
+            }
+        @include desktop {
             width: 300px;
             } 
     }

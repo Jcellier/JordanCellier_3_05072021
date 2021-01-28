@@ -28,3 +28,10 @@
         @content;
     }
   }
+
+  @mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, lg-tablet)) and
+    (max-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+  }
