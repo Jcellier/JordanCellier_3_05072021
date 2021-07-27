@@ -7,6 +7,8 @@
     padding-top: 30px;
     margin-bottom: 20px;
     margin-left: 5%;
+    font-size: 1.5rem;
+    font-weight: bolder;
   }
   &-box {
     margin-bottom: 30px;
@@ -65,6 +67,7 @@
 .restaurant-title {
   margin-bottom: 30px;
   margin-left: 5%;
+  font-size: 2rem;
   @include tablet {
     margin-left: 15%;
   }

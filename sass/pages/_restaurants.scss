@@ -1,614 +1,604 @@
 .header-logo {
-    height: 60px;
-    margin-top: 10px;
-    align-items: center;
-    font-family: $font-title;
-    font-size: 1rem;
-    font-weight: 100;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    @include tablet {
-        display: flex;
-        justify-content: space-between;
-        width: 250px;
+  height: 60px;
+  margin-top: 10px;
+  align-items: center;
+  font-family: $font-title;
+  font-size: 1rem;
+  font-weight: 100;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+  }
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+  & .fas {
+    padding-left: 20px;
+    grid-column: 1;
+  }
+  &__restaurant {
+    grid-column: 2/3;
+    @include small-screen {
+      font-size: 1.5rem;
+      padding-right: 2rem;
     }
-    @include desktop {
-        display: flex;
-        justify-content: space-between;
-        width: 250px;
-    }
-    & a {
-        text-decoration: none;
-        color: black;
-    }
-    & .fas {
-        padding-left: 20px;
-        grid-column: 1;
-    }
-    &__restaurant {
-        grid-column: 2/3;
-        @include small-screen {
-            font-size: 1.5rem;
-            padding-right: 2rem;
-        }
-    }
+  }
 }
 
-.header-img{
-    & img {
-        width: 100%;
-        object-fit: cover;
-        height: 250px;
-        @include tablet {
-            height: 350px;
-        }
-        @include desktop {
-            height: 600px;
-        }
+.header-img {
+  & img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    @include tablet {
+      height: 350px;
     }
+    @include desktop {
+      height: 600px;
+    }
+  }
 }
 
 main {
-    background-color: $color-bg-secondary;
+  background-color: $color-bg-secondary;
 }
 
 .main-title {
-    background-color: $color-bg-secondary;
-    position: relative;
-    bottom: 50px;
-    border-radius: 50px 50px 0px 0px;
-    height: 150%;
-    padding-top: 40px;
-    padding-left: 20px;
-    /*display: flex;
+  background-color: $color-bg-secondary;
+  position: relative;
+  bottom: 50px;
+  border-radius: 50px 50px 0px 0px;
+  height: 150%;
+  padding-top: 40px;
+  padding-left: 20px;
+  /*display: flex;
     justify-content: space-around;*/
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    grid-template-rows: 1fr;
-    font-size: 0.9rem;
-    @include small-screen {
-        font-size: 0.6rem;     
-    }
-    &__title {
-        font-family: $font-title;
-        grid-column: 1;
-        @include tablet {
-            font-size: 2.5rem; 
-        }
-        @include desktop {
-            font-size: 3rem;
-            margin-right: 10%; 
-            margin-left: 10%;
-        }
-    }
-    &__heart {
-        grid-column: 2;
-        grid-row: 1;
-        width: 30px;
-        height: 40px;
-        right: 30px;
-        cursor: pointer;
-        @include small-screen {
-            width: 20px;
-            height: 30px;
-        }
-        @include tablet {
-            width: 40px;
-            height: 50px;
-        }
-        @include desktop {
-            width: 50px;
-            height: 60px;
-        }
-        }
-        & .full {
-            fill: url(#linear);
-            visibility: collapse;
-            opacity: 0;
-            
-            
-        }
-        & .empty:active {
-            visibility: collapse;
-            
-            
-          }
-        & .empty:active + .full {
-            visibility: visible;
-            opacity: 1;
-            animation: 1s fadeIn forwards;
-        }
-}
-
-.entry{
-    margin-left: 20px;
-    @include small-screen {
-        margin-right: 0px; 
-        margin-left: 0px;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 0.9rem;
+  @include small-screen {
+    font-size: 0.6rem;
+  }
+  &__title {
+    font-family: $font-title;
+    grid-column: 1;
+    @include tablet {
+      font-size: 2.5rem;
     }
     @include desktop {
-        margin-right: 10%; 
-        margin-left: 10%;
+      font-size: 3rem;
+      margin-right: 10%;
+      margin-left: 10%;
     }
-    /*animation: menu 1s forwards;*/
-    &__title {
-        font-size: 1.3rem;
-        font-family: $font-text;
-        font-weight: 100;
-        text-transform: uppercase;        
-        margin-left: 10px;
-        animation: menu 0.4s forwards;
-        @include desktop {
-            font-size: 1.6rem;
-        }
-        & span {
-            text-decoration: underline  $color-tertiary 3px;
-            text-underline-position: under left;
-        }
+  }
+  &__heart {
+    grid-column: 2;
+    grid-row: 1;
+    width: 30px;
+    height: 40px;
+    right: 30px;
+    cursor: pointer;
+    @include small-screen {
+      width: 20px;
+      height: 30px;
     }
-    
-    &-menu__box {
-        margin-top: 20px;
-        margin-right: 30px; 
-        background-color: #fff;
-        border-radius: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        height: 60px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        @include small-screen {
-            width: 90%;
-            margin-right: 0px; 
-            margin-left: 0px;
-        }
-        &.one {
-            animation: menu 0.4s forwards;
-        }
-        &.two {
-            animation: menu 0.8s forwards;
-        }
-        &.three {
-            animation: menu 1.2s forwards;
-        }
-        &.four {
-            animation: menu 1.6s forwards;
-        }
-
-        & a {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            color: black;
-            text-decoration: none;
-            @include small-screen {
-                font-size: 0.8rem;
-            }
-            
-            & h3 {
-                flex-basis: 100%;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                @include desktop {
-                    font-size: 1.2rem;
-                }
-            }
-            & p {
-                font-weight: lighter;
-                flex-basis: 60%;
-                @include desktop {
-                    font-size: 1.1rem;
-                }    
-            }
-
-            & .menu__desc {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                flex-basis: 75%;
-                font-size: 0.9rem;
-                @include small-screen {
-                    font-size: 0.6rem;
-                }
-                @include desktop {
-                    font-size: 1.2rem;
-                }
-            }
-            & .price {
-                font-weight: bold;
-                flex-basis: 10%;
-                height: 30px;
-                margin-left: 0px;
-                position: relative;
-                left: 8%;
-                @include desktop {
-                    left: 14%;
-                }
-            }
-            
-            & .btn-rotation {
-                background-color: $color-tertiary;
-                color: #fff;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 70px;
-                bottom: 33px;
-                width: 0px;
-                left: 13px;
-                border-radius: 0 20px 20px 0;
-                text-decoration: none;
-                border: none;
-                transition-property: width;
-                transition-duration: 0.5s;
-                transition-timing-function: ease-in;
-                transform-origin: 50% 0%;
-                overflow: hidden;
-                visibility: collapse;
-                
-            }          
-        }
-        & a:hover button > i {
-            display: flex;
-            visibility: visible;
-            animation: check 0.5s forwards;
-        }
-        & a:hover > .btn-rotation {
-            display: flex;
-            visibility: visible;
-            width: 20%;
-            @include desktop {
-                width: 100px;
-            }        
-        }
-        & a:hover > .menu__desc {
-            flex-basis: 60%;
-            
-        }
-        & a:hover > .price {
-            flex-basis: 10%;
-        }
-        & a:hover > h3 {
-            flex-basis: 60%;
-            
-        }
+    @include tablet {
+      width: 40px;
+      height: 50px;
     }
-    
+    @include desktop {
+      width: 50px;
+      height: 60px;
+    }
+  }
+  & .full {
+    fill: url(#linear);
+    visibility: collapse;
+    opacity: 0;
+  }
+  & .empty:active {
+    visibility: collapse;
+  }
+  & .empty:active + .full {
+    visibility: visible;
+    opacity: 1;
+    animation: 1s fadeIn forwards;
+  }
 }
 
+.entry {
+  margin-left: 20px;
+  @include small-screen {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  @include desktop {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  /*animation: menu 1s forwards;*/
+  &__title {
+    font-size: 1.3rem;
+    font-family: $font-text;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-left: 10px;
+    animation: menu 0.4s forwards;
+    @include desktop {
+      font-size: 1.6rem;
+    }
+    & span {
+      text-decoration: underline $color-tertiary 3px;
+      text-underline-position: under left;
+    }
+  }
+
+  &-menu__box {
+    margin-top: 20px;
+    margin-right: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @include small-screen {
+      width: 90%;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    &.one {
+      animation: menu 0.4s forwards;
+    }
+    &.two {
+      animation: menu 0.8s forwards;
+    }
+    &.three {
+      animation: menu 1.2s forwards;
+    }
+    &.four {
+      animation: menu 1.6s forwards;
+    }
+
+    & a {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: black;
+      text-decoration: none;
+      @include small-screen {
+        font-size: 0.8rem;
+      }
+
+      & h3 {
+        flex-basis: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        @include desktop {
+          font-size: 1.2rem;
+        }
+      }
+      & p {
+        font-weight: lighter;
+        flex-basis: 60%;
+        @include desktop {
+          font-size: 1.1rem;
+        }
+      }
+
+      & .menu__desc {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-basis: 75%;
+        font-size: 0.9rem;
+        @include small-screen {
+          font-size: 0.6rem;
+        }
+        @include desktop {
+          font-size: 1.2rem;
+        }
+      }
+      & .price {
+        font-weight: bold;
+        flex-basis: 10%;
+        height: 30px;
+        margin-left: 0px;
+        position: relative;
+        left: 8%;
+        padding-right: 10px;
+        @include desktop {
+          left: 14%;
+          padding-right: 50px;
+        }
+      }
+
+      & .btn-rotation {
+        background-color: $color-tertiary;
+        color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        bottom: 33px;
+        width: 0px;
+        left: 13px;
+        border-radius: 0 20px 20px 0;
+        text-decoration: none;
+        border: none;
+        transition-property: width;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transform-origin: 50% 0%;
+        overflow: hidden;
+        visibility: collapse;
+      }
+    }
+    & a:hover button > i {
+      display: flex;
+      visibility: visible;
+      animation: check 0.5s forwards;
+    }
+    & a:hover > .btn-rotation {
+      display: flex;
+      visibility: visible;
+      width: 20%;
+      @include tablet {
+        width: 100px;
+      }
+      @include desktop {
+        width: 100px;
+      }
+    }
+    & a:hover > .menu__desc {
+      flex-basis: 60%;
+    }
+    & a:hover > .price {
+      flex-basis: 0%;
+    }
+    & a:hover > h3 {
+      flex-basis: 60%;
+    }
+  }
+}
 
 .plats {
-    margin-left: 20px;
-    @include small-screen {
-        margin-right: 0px; 
-        margin-left: 0px;
-    }
+  margin-left: 20px;
+  @include small-screen {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  @include desktop {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  /*animation: menu 2s forwards;*/
+  &__title {
+    font-size: 1.3rem;
+    font-family: $font-text;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 20px;
+    animation: menu 2s forwards;
     @include desktop {
-        margin-right: 10%; 
-        margin-left: 10%;
+      font-size: 1.6rem;
     }
-    /*animation: menu 2s forwards;*/
-    &__title {
-        font-size: 1.3rem;
-        font-family: $font-text;
-        font-weight: 100;
-        text-transform: uppercase;        
-        margin-left: 10px;
-        margin-top: 20px;
-        animation: menu 2s forwards;
+    & span {
+      text-decoration: underline $color-tertiary 3px;
+      text-underline-position: under left;
+    }
+  }
+  &-menu__box {
+    margin-top: 20px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @include small-screen {
+      width: 90%;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    &.one {
+      animation: menu 2s forwards;
+    }
+    &.two {
+      animation: menu 2.4s forwards;
+    }
+    &.three {
+      animation: menu 2.8s forwards;
+    }
+    & a {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: black;
+      text-decoration: none;
+      @include small-screen {
+        font-size: 0.8rem;
+      }
+      & h3 {
+        flex-basis: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         @include desktop {
-            font-size: 1.6rem;
+          font-size: 1.2rem;
         }
-        & span {
-            text-decoration: underline  $color-tertiary 3px;
-            text-underline-position: under left;
+      }
+      & p {
+        font-weight: lighter;
+        flex-basis: 60%;
+        @include desktop {
+          font-size: 1.1rem;
         }
-    }
-    &-menu__box {
-        margin-top: 20px;
-        margin-right: 30px;
-        flex-wrap: wrap;
-        background-color: #fff;
-        border-radius: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        height: 60px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        @include small-screen {
-            width: 90%;
-            margin-right: 0px; 
-            margin-left: 0px;
-        }
-        &.one {
-            animation: menu 2s forwards;
-        }
-        &.two {
-            animation: menu 2.4s forwards;
-        }
-        &.three {
-            animation: menu 2.8s forwards;
-        }
-        & a {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            color: black;
-            text-decoration: none;
-            @include small-screen {
-                font-size: 0.8rem;
-            }
-            & h3 {
-                flex-basis: 100%;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                @include desktop {
-                    font-size: 1.2rem;
-                }
-            }
-            & p {
-                font-weight: lighter;
-                flex-basis: 60%;
-                @include desktop {
-                    font-size: 1.1rem;
-                }   
-            }
+      }
 
-            & .menu__desc {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                flex-basis: 75%;
-                font-size: 0.9rem;
-                @include small-screen {
-                    font-size: 0.6rem;
-                } 
-                @include desktop {
-                    font-size: 1.2rem;
-                }
-            }
-            & .price {
-                font-weight: bold;
-                flex-basis: 10%;
-                height: 30px;
-                margin-left: 0px;
-                position: relative;
-                left: 8%;
-                @include desktop {
-                    left: 14%;
-                }
-            }
-            & .btn-rotation {
-                background-color: $color-tertiary;
-                color: #fff;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 70px;
-                bottom: 33px;
-                width: 0px;
-                left: 13px;
-                border-radius: 0 20px 20px 0;
-                text-decoration: none;
-                border: none;
-                transition-property: width;
-                transition-duration: 0.5s;
-                transition-timing-function: ease-in;
-                transform-origin: 50% 0%;
-                overflow: hidden;
-                visibility: collapse;
-                
-            }          
+      & .menu__desc {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-basis: 75%;
+        font-size: 0.9rem;
+        @include small-screen {
+          font-size: 0.6rem;
         }
-        & a:hover button > i {
-            display: flex;
-            visibility: visible;
-            animation: check 0.5s forwards;
+        @include desktop {
+          font-size: 1.2rem;
         }
-        & a:hover > .btn-rotation {
-            display: flex;
-            visibility: visible;
-            width: 20%; 
-            @include desktop {
-                width: 100px;
-            }          
+      }
+      & .price {
+        font-weight: bold;
+        flex-basis: 10%;
+        height: 30px;
+        margin-left: 0px;
+        position: relative;
+        left: 8%;
+        padding-right: 50px;
+        @include desktop {
+          left: 14%;
+          padding-right: 50px;
         }
-        & a:hover > .menu__desc {
-            flex-basis: 60%;
-            
-        }
-        & a:hover > .price {
-            flex-basis: 10%;
-        }
-        & a:hover > h3 {
-            flex-basis: 60%;
-            
-        }
+      }
+      & .btn-rotation {
+        background-color: $color-tertiary;
+        color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        bottom: 33px;
+        width: 0px;
+        left: 13px;
+        border-radius: 0 20px 20px 0;
+        text-decoration: none;
+        border: none;
+        transition-property: width;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transform-origin: 50% 0%;
+        overflow: hidden;
+        visibility: collapse;
+      }
     }
+    & a:hover button > i {
+      display: flex;
+      visibility: visible;
+      animation: check 0.5s forwards;
+    }
+    & a:hover > .btn-rotation {
+      display: flex;
+      visibility: visible;
+      width: 20%;
+      @include desktop {
+        width: 100px;
+      }
+    }
+    & a:hover > .menu__desc {
+      flex-basis: 60%;
+    }
+    & a:hover > .price {
+      flex-basis: 0%;
+    }
+    & a:hover > h3 {
+      flex-basis: 60%;
+    }
+  }
 }
 
 .desserts {
-    margin-left: 20px;
-    animation: menu 3s forwards;
-    @include small-screen {
-        margin-right: 0px; 
-        margin-left: 0px;
-    }
+  margin-left: 20px;
+  animation: menu 3s forwards;
+  @include small-screen {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  @include desktop {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  &__title {
+    font-size: 1.3rem;
+    font-family: $font-text;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-top: 20px;
+    animation: menu 3.2s forwards;
     @include desktop {
-        margin-right: 10%; 
-        margin-left: 10%;
+      font-size: 1.6rem;
     }
-    &__title {
-        font-size: 1.3rem;
-        font-family: $font-text;
-        font-weight: 100;
-        text-transform: uppercase;        
-        margin-left: 10px;
-        margin-top: 20px;
-        animation: menu 3.2s forwards;
+    & span {
+      text-decoration: underline $color-tertiary 3px;
+      text-underline-position: under left;
+    }
+  }
+  &-menu__box {
+    margin-top: 20px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @include small-screen {
+      width: 90%;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    &.one {
+      animation: menu 3.2s forwards;
+    }
+    &.two {
+      animation: menu 3.6s forwards;
+    }
+    &.three {
+      animation: menu 4s forwards;
+    }
+    & a {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: black;
+      text-decoration: none;
+      @include small-screen {
+        font-size: 0.8rem;
+      }
+      & h3 {
+        flex-basis: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         @include desktop {
-            font-size: 1.6rem;
+          font-size: 1.2rem;
         }
-        & span {
-            text-decoration: underline  $color-tertiary 3px;
-            text-underline-position: under left;
+      }
+      & p {
+        font-weight: lighter;
+        flex-basis: 60%;
+        @include desktop {
+          font-size: 1.1rem;
         }
-    }
-    &-menu__box {
-        margin-top: 20px;
-        margin-right: 30px;
-        flex-wrap: wrap;
-        background-color: #fff;
-        border-radius: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        height: 60px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        @include small-screen {
-            width: 90%;
-            margin-right: 0px; 
-            margin-left: 0px;
-        }
-        &.one {
-            animation: menu 3.2s forwards;
-        }
-        &.two {
-            animation: menu 3.6s forwards;
-        }
-        &.three {
-            animation: menu 4s forwards;
-        }
-        & a {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            color: black;
-            text-decoration: none;
-            @include small-screen {
-                font-size: 0.8rem;
-            }
-            & h3 {
-                flex-basis: 100%;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                @include desktop {
-                    font-size: 1.2rem;
-                }
-            }
-            & p {
-                font-weight: lighter;
-                flex-basis: 60%;
-                @include desktop {
-                    font-size: 1.1rem;
-                }     
-            }
+      }
 
-            & .menu__desc {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                flex-basis: 75%;
-                font-size: 0.9rem;
-                @include small-screen {
-                    font-size: 0.6rem;
-                } 
-                @include desktop {
-                    font-size: 1.2rem;
-                }           
-            }
-            & .price {
-                font-weight: bold;
-                flex-basis: 10%;
-                height: 30px;
-                margin-left: 0px;
-                position: relative;
-                left: 8%;
-                @include desktop {
-                    left: 14%;
-                }
-            }
-            & .btn-rotation {
-                background-color: $color-tertiary;
-                color: #fff;
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 70px;
-                bottom: 33px;
-                width: 0px;
-                left: 13px;
-                border-radius: 0 20px 20px 0;
-                text-decoration: none;
-                border: none;
-                transition-property: width;
-                transition-duration: 0.5s;
-                transition-timing-function: ease-in;
-                transform-origin: 50% 0%;
-                overflow: hidden;
-                visibility: collapse;
-                
-            }          
+      & .menu__desc {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex-basis: 75%;
+        font-size: 0.9rem;
+        @include small-screen {
+          font-size: 0.6rem;
         }
-        & a:hover button > i {
-            display: flex;
-            visibility: visible;
-            animation: check 0.5s forwards;
+        @include desktop {
+          font-size: 1.2rem;
         }
-        & a:hover > .btn-rotation {
-            display: flex;
-            visibility: visible;
-            width: 20%;
-            @include desktop {
-                width: 100px;
-            }         
+      }
+      & .price {
+        font-weight: bold;
+        flex-basis: 10%;
+        height: 30px;
+        margin-left: 0px;
+        position: relative;
+        left: 8%;
+        padding-right: 10px;
+        @include desktop {
+          left: 14%;
+          padding-right: 50px;
         }
-        & a:hover > .menu__desc {
-            flex-basis: 60%;
-            
-        }
-        & a:hover > .price {
-            flex-basis: 20%;
-        }
-        & a:hover > h3 {
-            flex-basis: 60%;
-            
-        }
+      }
+      & .btn-rotation {
+        background-color: $color-tertiary;
+        color: #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        bottom: 33px;
+        width: 0px;
+        left: 13px;
+        border-radius: 0 20px 20px 0;
+        text-decoration: none;
+        border: none;
+        transition-property: width;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        transform-origin: 50% 0%;
+        overflow: hidden;
+        visibility: collapse;
+      }
     }
+    & a:hover button > i {
+      display: flex;
+      visibility: visible;
+      animation: check 0.5s forwards;
+    }
+    & a:hover > .btn-rotation {
+      display: flex;
+      visibility: visible;
+      width: 20%;
+      @include desktop {
+        width: 100px;
+      }
+    }
+    & a:hover > .menu__desc {
+      flex-basis: 60%;
+    }
+    & a:hover > .price {
+      flex-basis: 0%;
+    }
+    & a:hover > h3 {
+      flex-basis: 60%;
+    }
+  }
 }
 
-
 .order {
-    @include btn-mix;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
-    @include tablet {
-        width: 300px;
-    }
-    @include desktop {
-        
-        width: 300px;
-        
-    }
+  @include btn-mix;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+  @include tablet {
+    width: 300px;
+  }
+  @include desktop {
+    width: 300px;
+  }
 }
 
 .order-btn {
-    @include tablet {
-        display: flex;
-        justify-content: center;
-        
-    }
-    @include desktop {
-        display: flex;
-        justify-content: center;
-    } 
+  @include tablet {
+    display: flex;
+    justify-content: center;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
 }
