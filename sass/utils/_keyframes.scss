@@ -1,83 +1,100 @@
 @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-
-    25% {
-        opacity: 0.25;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    80% {
-        opacity: 0.8;
-    }
-
-    100% {
-      visibility: visible;
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
 
+  25% {
+    opacity: 0.25;
+  }
 
-  @keyframes load {
-    0% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 0.5;
+  }
 
-    80% {
-        opacity: 1;
-    }
+  80% {
+    opacity: 0.8;
+  }
 
-    100% {
-        opacity: 0;
-        visibility: collapse;
-    }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+
+@keyframes no-scroll {
+  0% {
+    overflow: hidden;
+  }
+
+  98% {
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: visible;
+  }
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes menu {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    60% {
-        opacity: 0;
-    }
+  60% {
+    opacity: 0;
+  }
 
-    80% {
-        opacity: 0;
-    }
+  80% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes check {
-    0% {
-        rotate: -180deg;
-    }
+  0% {
+    rotate: -180deg;
+  }
 
-    25% {
-        rotate: -135deg;
-    }
+  25% {
+    rotate: -135deg;
+  }
 
-    50% {
-        rotate: -90deg;
-    }
+  50% {
+    rotate: -90deg;
+  }
 
-    75% {
-        rotate: -45deg;
-    }
+  75% {
+    rotate: -45deg;
+  }
 
-    100% {
-        rotate: 0deg;
-    }
+  100% {
+    rotate: 0deg;
+  }
 }
